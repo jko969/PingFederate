@@ -1,0 +1,3 @@
+2023-12-11 13:38:17,001| tid:8S67xRxBKx85mQR3vv0rrrXaVuM| AUTHN_ATTEMPT| | [0:0:0:0:0:0:0:1] | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 799 
+2023-12-11 13:38:28,175| tid:8S67xRxBKx85mQR3vv0rrrXaVuM| AUTHN_ATTEMPT| sdf| [0:0:0:0:0:0:0:1] | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| [source:LDAP-FC54C87F0BC5FA63833FC8CFB5CBB8921150CDD6] Please Try Again Later| 3065 
+2023-12-11 13:48:22,067| tid:of_Fh0jd8GbPDz5scsju-zRQn1k| AUTHN_ATTEMPT| | [0:0:0:0:0:0:0:1] | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 753 

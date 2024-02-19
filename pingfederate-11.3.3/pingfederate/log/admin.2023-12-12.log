@@ -1,0 +1,6 @@
+2023-12-12 06:33:14,875 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin |  | BJCoyLQCLatli1JIoEXFErezzifnNsYPH8NX22bRlcQ | USER | SESSION_TIMEOUT |  | Session timed out at 2023-12-12 06:01:24,713
+2023-12-12 11:10:36,792 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin | 10.0.0.3 | MgkHoHmMZeoSXuZotjEKcbNnN4v1_l1YYAix8L2io44 | USER | LOGIN_ATTEMPT |  | Login was successful
+2023-12-12 14:12:46,352 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin | [0:0:0:0:0:0:0:1] | WVe2Z7AHJJFesH8SXWdSKHl3Ci6RgkeG5b_EM4QT1L4 | USER | LOGIN_ATTEMPT |  | Login was successful
+2023-12-12 14:15:24,054 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin | [0:0:0:0:0:0:0:1] |  | IDP_ADAPTER | MODIFY |  | HTML_Form_Adapter
+2023-12-12 23:01:00,584 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin |  | WVe2Z7AHJJFesH8SXWdSKHl3Ci6RgkeG5b_EM4QT1L4 | USER | SESSION_TIMEOUT |  | Session timed out at 2023-12-12 22:15:24,275
+2023-12-12 23:51:00,991 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin |  | MgkHoHmMZeoSXuZotjEKcbNnN4v1_l1YYAix8L2io44 | USER | SESSION_TIMEOUT |  | Session timed out at 2023-12-12 23:00:30,531

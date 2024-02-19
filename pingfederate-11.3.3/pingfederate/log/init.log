@@ -1,0 +1,1071 @@
+2023-12-11 13:33:55,766 ====================== PF Environment Variables =========================
+
+2023-12-11 13:33:55,756 PF_HOME = /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate 
+
+2023-12-11 13:33:55,766 =========================================================================
+2023-12-11 13:33:55,802 pf.operational.mode: STANDALONE
+2023-12-11 13:33:55,802 Set 70 system properties from /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate/bin/run.properties
+2023-12-11 13:33:55,806 Creating temp directory: /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate/server/default/tmp
+2023-12-11 13:36:38,743 ====================== PF Environment Variables =========================
+
+2023-12-11 13:36:38,733 PF_HOME = /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate 
+
+2023-12-11 13:36:38,743 =========================================================================
+2023-12-11 13:36:38,774 pf.operational.mode: STANDALONE
+2023-12-11 13:36:38,774 Set 70 system properties from /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate/bin/run.properties
+2023-12-11 13:37:18,532 ====================== PF Environment Variables =========================
+
+2023-12-11 13:37:18,520 PF_HOME = /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate 
+
+2023-12-11 13:37:18,532 =========================================================================
+2023-12-11 13:37:18,564 pf.operational.mode: STANDALONE
+2023-12-11 13:37:18,565 Set 70 system properties from /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate/bin/run.properties
+2023-12-11 13:39:28,999 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:125)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndStart(JdbcDatabaseManager.java:613)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.flush(AbstractDatabaseManager.java:186)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.shutdown(AbstractDatabaseManager.java:226)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.releaseSub(AbstractDatabaseManager.java:215)
+	at org.apache.logging.log4j.core.appender.AbstractManager.stop(AbstractManager.java:117)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseAppender.stop(AbstractDatabaseAppender.java:181)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.stop(AbstractConfiguration.java:414)
+	at org.apache.logging.log4j.core.LoggerContext.stop(LoggerContext.java:377)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.shutdown(ClassLoaderContextSelector.java:75)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.shutdown(Log4jContextFactory.java:328)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:392)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:373)
+	at org.sourceid.saml20.domain.mgmt.impl.MediatorImpl$ShutdownHook.run(MediatorImpl.java:1113)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 25 more
+2023-12-11 13:39:29,002 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:119)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.access$800(JdbcDatabaseManager.java:64)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.reconnect(JdbcDatabaseManager.java:181)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.reconnectOn(JdbcDatabaseManager.java:708)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndStart(JdbcDatabaseManager.java:615)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.flush(AbstractDatabaseManager.java:186)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.shutdown(AbstractDatabaseManager.java:226)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.releaseSub(AbstractDatabaseManager.java:215)
+	at org.apache.logging.log4j.core.appender.AbstractManager.stop(AbstractManager.java:117)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseAppender.stop(AbstractDatabaseAppender.java:181)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.stop(AbstractConfiguration.java:414)
+	at org.apache.logging.log4j.core.LoggerContext.stop(LoggerContext.java:377)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.shutdown(ClassLoaderContextSelector.java:75)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.shutdown(Log4jContextFactory.java:328)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:392)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:373)
+	at org.sourceid.saml20.domain.mgmt.impl.MediatorImpl$ShutdownHook.run(MediatorImpl.java:1113)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 28 more
+2023-12-11 13:39:34,010 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:119)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.access$800(JdbcDatabaseManager.java:64)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.reconnect(JdbcDatabaseManager.java:181)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.run(JdbcDatabaseManager.java:192)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 15 more
+2023-12-11 13:39:38,656 ====================== PF Environment Variables =========================
+
+2023-12-11 13:39:38,646 PF_HOME = /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate 
+
+2023-12-11 13:39:38,656 =========================================================================
+2023-12-11 13:39:38,687 pf.operational.mode: STANDALONE
+2023-12-11 13:39:38,688 Set 70 system properties from /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate/bin/run.properties
+2023-12-11 13:46:19,780 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:125)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndStart(JdbcDatabaseManager.java:613)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.flush(AbstractDatabaseManager.java:186)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.shutdown(AbstractDatabaseManager.java:226)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.releaseSub(AbstractDatabaseManager.java:215)
+	at org.apache.logging.log4j.core.appender.AbstractManager.stop(AbstractManager.java:117)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseAppender.stop(AbstractDatabaseAppender.java:181)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.stop(AbstractConfiguration.java:414)
+	at org.apache.logging.log4j.core.LoggerContext.stop(LoggerContext.java:377)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.shutdown(ClassLoaderContextSelector.java:75)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.shutdown(Log4jContextFactory.java:328)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:392)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:373)
+	at org.sourceid.saml20.domain.mgmt.impl.MediatorImpl$ShutdownHook.run(MediatorImpl.java:1113)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 25 more
+2023-12-11 13:46:19,784 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:119)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.access$800(JdbcDatabaseManager.java:64)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.reconnect(JdbcDatabaseManager.java:181)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.reconnectOn(JdbcDatabaseManager.java:708)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndStart(JdbcDatabaseManager.java:615)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.flush(AbstractDatabaseManager.java:186)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.shutdown(AbstractDatabaseManager.java:226)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.releaseSub(AbstractDatabaseManager.java:215)
+	at org.apache.logging.log4j.core.appender.AbstractManager.stop(AbstractManager.java:117)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseAppender.stop(AbstractDatabaseAppender.java:181)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.stop(AbstractConfiguration.java:414)
+	at org.apache.logging.log4j.core.LoggerContext.stop(LoggerContext.java:377)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.shutdown(ClassLoaderContextSelector.java:75)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.shutdown(Log4jContextFactory.java:328)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:392)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:373)
+	at org.sourceid.saml20.domain.mgmt.impl.MediatorImpl$ShutdownHook.run(MediatorImpl.java:1113)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 28 more
+2023-12-11 13:46:24,788 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:119)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.access$800(JdbcDatabaseManager.java:64)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.reconnect(JdbcDatabaseManager.java:181)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.run(JdbcDatabaseManager.java:192)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 15 more
+2023-12-11 13:47:27,613 ====================== PF Environment Variables =========================
+
+2023-12-11 13:47:27,603 PF_HOME = /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate 
+
+2023-12-11 13:47:27,613 =========================================================================
+2023-12-11 13:47:27,643 pf.operational.mode: STANDALONE
+2023-12-11 13:47:27,644 Set 70 system properties from /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate/bin/run.properties
+2023-12-13 09:06:50,138 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:125)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndStart(JdbcDatabaseManager.java:613)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.flush(AbstractDatabaseManager.java:186)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.shutdown(AbstractDatabaseManager.java:226)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.releaseSub(AbstractDatabaseManager.java:215)
+	at org.apache.logging.log4j.core.appender.AbstractManager.stop(AbstractManager.java:117)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseAppender.stop(AbstractDatabaseAppender.java:181)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.stop(AbstractConfiguration.java:414)
+	at org.apache.logging.log4j.core.LoggerContext.stop(LoggerContext.java:377)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.shutdown(ClassLoaderContextSelector.java:75)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.shutdown(Log4jContextFactory.java:328)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:392)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:373)
+	at org.sourceid.saml20.domain.mgmt.impl.MediatorImpl$ShutdownHook.run(MediatorImpl.java:1113)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 25 more
+2023-12-13 09:06:50,142 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:119)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.access$800(JdbcDatabaseManager.java:64)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.reconnect(JdbcDatabaseManager.java:181)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.reconnectOn(JdbcDatabaseManager.java:708)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndStart(JdbcDatabaseManager.java:615)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.flush(AbstractDatabaseManager.java:186)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.shutdown(AbstractDatabaseManager.java:226)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.releaseSub(AbstractDatabaseManager.java:215)
+	at org.apache.logging.log4j.core.appender.AbstractManager.stop(AbstractManager.java:117)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseAppender.stop(AbstractDatabaseAppender.java:181)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.stop(AbstractConfiguration.java:414)
+	at org.apache.logging.log4j.core.LoggerContext.stop(LoggerContext.java:377)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.shutdown(ClassLoaderContextSelector.java:75)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.shutdown(Log4jContextFactory.java:328)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:392)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:373)
+	at org.sourceid.saml20.domain.mgmt.impl.MediatorImpl$ShutdownHook.run(MediatorImpl.java:1113)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 28 more
+2023-12-13 09:06:55,148 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:119)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.access$800(JdbcDatabaseManager.java:64)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.reconnect(JdbcDatabaseManager.java:181)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.run(JdbcDatabaseManager.java:192)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 15 more
+2023-12-13 09:07:13,451 ====================== PF Environment Variables =========================
+
+2023-12-13 09:07:13,437 PF_HOME = /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate 
+
+2023-12-13 09:07:13,451 =========================================================================
+2023-12-13 09:07:13,519 pf.operational.mode: STANDALONE
+2023-12-13 09:07:13,519 Set 70 system properties from /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate/bin/run.properties
+2023-12-13 16:58:31,557 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:125)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndStart(JdbcDatabaseManager.java:613)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.flush(AbstractDatabaseManager.java:186)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.shutdown(AbstractDatabaseManager.java:226)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.releaseSub(AbstractDatabaseManager.java:215)
+	at org.apache.logging.log4j.core.appender.AbstractManager.stop(AbstractManager.java:117)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseAppender.stop(AbstractDatabaseAppender.java:181)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.stop(AbstractConfiguration.java:414)
+	at org.apache.logging.log4j.core.LoggerContext.stop(LoggerContext.java:377)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.shutdown(ClassLoaderContextSelector.java:75)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.shutdown(Log4jContextFactory.java:328)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:392)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:373)
+	at org.sourceid.saml20.domain.mgmt.impl.MediatorImpl$ShutdownHook.run(MediatorImpl.java:1113)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 25 more
+2023-12-13 16:58:31,560 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:119)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.access$800(JdbcDatabaseManager.java:64)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.reconnect(JdbcDatabaseManager.java:181)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.reconnectOn(JdbcDatabaseManager.java:708)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndStart(JdbcDatabaseManager.java:615)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.flush(AbstractDatabaseManager.java:186)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.shutdown(AbstractDatabaseManager.java:226)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.releaseSub(AbstractDatabaseManager.java:215)
+	at org.apache.logging.log4j.core.appender.AbstractManager.stop(AbstractManager.java:117)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseAppender.stop(AbstractDatabaseAppender.java:181)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.stop(AbstractConfiguration.java:414)
+	at org.apache.logging.log4j.core.LoggerContext.stop(LoggerContext.java:377)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.shutdown(ClassLoaderContextSelector.java:75)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.shutdown(Log4jContextFactory.java:328)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:392)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:373)
+	at org.sourceid.saml20.domain.mgmt.impl.MediatorImpl$ShutdownHook.run(MediatorImpl.java:1113)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 28 more
+2023-12-13 16:58:36,563 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:119)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.access$800(JdbcDatabaseManager.java:64)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.reconnect(JdbcDatabaseManager.java:181)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.run(JdbcDatabaseManager.java:192)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 15 more
+2023-12-13 16:58:44,480 ====================== PF Environment Variables =========================
+
+2023-12-13 16:58:44,470 PF_HOME = /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate 
+
+2023-12-13 16:58:44,480 =========================================================================
+2023-12-13 16:58:44,510 pf.operational.mode: STANDALONE
+2023-12-13 16:58:44,510 Set 70 system properties from /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate/bin/run.properties
+2023-12-18 11:35:02,078 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:125)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndStart(JdbcDatabaseManager.java:613)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.flush(AbstractDatabaseManager.java:186)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.shutdown(AbstractDatabaseManager.java:226)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.releaseSub(AbstractDatabaseManager.java:215)
+	at org.apache.logging.log4j.core.appender.AbstractManager.stop(AbstractManager.java:117)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseAppender.stop(AbstractDatabaseAppender.java:181)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.stop(AbstractConfiguration.java:414)
+	at org.apache.logging.log4j.core.LoggerContext.stop(LoggerContext.java:377)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.shutdown(ClassLoaderContextSelector.java:75)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.shutdown(Log4jContextFactory.java:328)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:392)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:373)
+	at org.sourceid.saml20.domain.mgmt.impl.MediatorImpl$ShutdownHook.run(MediatorImpl.java:1113)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 25 more
+2023-12-18 11:35:02,082 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:119)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.access$800(JdbcDatabaseManager.java:64)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.reconnect(JdbcDatabaseManager.java:181)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.reconnectOn(JdbcDatabaseManager.java:708)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndStart(JdbcDatabaseManager.java:615)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.flush(AbstractDatabaseManager.java:186)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.shutdown(AbstractDatabaseManager.java:226)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.releaseSub(AbstractDatabaseManager.java:215)
+	at org.apache.logging.log4j.core.appender.AbstractManager.stop(AbstractManager.java:117)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseAppender.stop(AbstractDatabaseAppender.java:181)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.stop(AbstractConfiguration.java:414)
+	at org.apache.logging.log4j.core.LoggerContext.stop(LoggerContext.java:377)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.shutdown(ClassLoaderContextSelector.java:75)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.shutdown(Log4jContextFactory.java:328)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:392)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:373)
+	at org.sourceid.saml20.domain.mgmt.impl.MediatorImpl$ShutdownHook.run(MediatorImpl.java:1113)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 28 more
+2023-12-18 11:35:07,086 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:119)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.access$800(JdbcDatabaseManager.java:64)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.reconnect(JdbcDatabaseManager.java:181)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.run(JdbcDatabaseManager.java:192)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 15 more
+2023-12-18 11:35:25,907 ====================== PF Environment Variables =========================
+
+2023-12-18 11:35:25,894 PF_HOME = /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate 
+
+2023-12-18 11:35:25,907 =========================================================================
+2023-12-18 11:35:25,983 pf.operational.mode: STANDALONE
+2023-12-18 11:35:25,984 Set 70 system properties from /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate/bin/run.properties
+2023-12-18 11:53:16,454 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:125)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndStart(JdbcDatabaseManager.java:613)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.flush(AbstractDatabaseManager.java:186)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.shutdown(AbstractDatabaseManager.java:226)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.releaseSub(AbstractDatabaseManager.java:215)
+	at org.apache.logging.log4j.core.appender.AbstractManager.stop(AbstractManager.java:117)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseAppender.stop(AbstractDatabaseAppender.java:181)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.stop(AbstractConfiguration.java:414)
+	at org.apache.logging.log4j.core.LoggerContext.stop(LoggerContext.java:377)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.shutdown(ClassLoaderContextSelector.java:75)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.shutdown(Log4jContextFactory.java:328)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:392)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:373)
+	at org.sourceid.saml20.domain.mgmt.impl.MediatorImpl$ShutdownHook.run(MediatorImpl.java:1113)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 25 more
+2023-12-18 11:53:16,456 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:119)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.access$800(JdbcDatabaseManager.java:64)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.reconnect(JdbcDatabaseManager.java:181)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.reconnectOn(JdbcDatabaseManager.java:708)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndStart(JdbcDatabaseManager.java:615)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.flush(AbstractDatabaseManager.java:186)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.shutdown(AbstractDatabaseManager.java:226)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.releaseSub(AbstractDatabaseManager.java:215)
+	at org.apache.logging.log4j.core.appender.AbstractManager.stop(AbstractManager.java:117)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseAppender.stop(AbstractDatabaseAppender.java:181)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.stop(AbstractConfiguration.java:414)
+	at org.apache.logging.log4j.core.LoggerContext.stop(LoggerContext.java:377)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.shutdown(ClassLoaderContextSelector.java:75)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.shutdown(Log4jContextFactory.java:328)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:392)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:373)
+	at org.sourceid.saml20.domain.mgmt.impl.MediatorImpl$ShutdownHook.run(MediatorImpl.java:1113)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 28 more
+2023-12-18 11:53:21,463 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:119)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.access$800(JdbcDatabaseManager.java:64)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.reconnect(JdbcDatabaseManager.java:181)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.run(JdbcDatabaseManager.java:192)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 15 more
+2023-12-18 11:53:26,341 ====================== PF Environment Variables =========================
+
+2023-12-18 11:53:26,331 PF_HOME = /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate 
+
+2023-12-18 11:53:26,342 =========================================================================
+2023-12-18 11:53:26,381 pf.operational.mode: STANDALONE
+2023-12-18 11:53:26,382 Set 70 system properties from /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate/bin/run.properties
+2023-12-18 12:07:45,893 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:125)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndStart(JdbcDatabaseManager.java:613)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.flush(AbstractDatabaseManager.java:186)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.shutdown(AbstractDatabaseManager.java:226)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.releaseSub(AbstractDatabaseManager.java:215)
+	at org.apache.logging.log4j.core.appender.AbstractManager.stop(AbstractManager.java:117)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseAppender.stop(AbstractDatabaseAppender.java:181)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.stop(AbstractConfiguration.java:414)
+	at org.apache.logging.log4j.core.LoggerContext.stop(LoggerContext.java:377)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.shutdown(ClassLoaderContextSelector.java:75)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.shutdown(Log4jContextFactory.java:328)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:392)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:373)
+	at org.sourceid.saml20.domain.mgmt.impl.MediatorImpl$ShutdownHook.run(MediatorImpl.java:1113)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 25 more
+2023-12-18 12:07:45,896 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:119)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.access$800(JdbcDatabaseManager.java:64)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.reconnect(JdbcDatabaseManager.java:181)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.reconnectOn(JdbcDatabaseManager.java:708)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndStart(JdbcDatabaseManager.java:615)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.flush(AbstractDatabaseManager.java:186)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.shutdown(AbstractDatabaseManager.java:226)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.releaseSub(AbstractDatabaseManager.java:215)
+	at org.apache.logging.log4j.core.appender.AbstractManager.stop(AbstractManager.java:117)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseAppender.stop(AbstractDatabaseAppender.java:181)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.stop(AbstractConfiguration.java:414)
+	at org.apache.logging.log4j.core.LoggerContext.stop(LoggerContext.java:377)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.shutdown(ClassLoaderContextSelector.java:75)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.shutdown(Log4jContextFactory.java:328)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:392)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:373)
+	at org.sourceid.saml20.domain.mgmt.impl.MediatorImpl$ShutdownHook.run(MediatorImpl.java:1113)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 28 more
+2023-12-18 12:07:50,900 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:119)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.access$800(JdbcDatabaseManager.java:64)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.reconnect(JdbcDatabaseManager.java:181)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.run(JdbcDatabaseManager.java:192)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 15 more
+2023-12-18 12:07:52,992 ====================== PF Environment Variables =========================
+
+2023-12-18 12:07:52,982 PF_HOME = /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate 
+
+2023-12-18 12:07:52,992 =========================================================================
+2023-12-18 12:07:53,029 pf.operational.mode: STANDALONE
+2023-12-18 12:07:53,029 Set 70 system properties from /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate/bin/run.properties
+2024-01-18 10:40:17,638 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:125)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndStart(JdbcDatabaseManager.java:613)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.flush(AbstractDatabaseManager.java:186)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.shutdown(AbstractDatabaseManager.java:226)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.releaseSub(AbstractDatabaseManager.java:215)
+	at org.apache.logging.log4j.core.appender.AbstractManager.stop(AbstractManager.java:117)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseAppender.stop(AbstractDatabaseAppender.java:181)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.stop(AbstractConfiguration.java:414)
+	at org.apache.logging.log4j.core.LoggerContext.stop(LoggerContext.java:377)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.shutdown(ClassLoaderContextSelector.java:75)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.shutdown(Log4jContextFactory.java:328)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:392)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:373)
+	at org.sourceid.saml20.domain.mgmt.impl.MediatorImpl$ShutdownHook.run(MediatorImpl.java:1113)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 25 more
+2024-01-18 10:40:17,644 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:119)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.access$800(JdbcDatabaseManager.java:64)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.reconnect(JdbcDatabaseManager.java:181)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.reconnectOn(JdbcDatabaseManager.java:708)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndStart(JdbcDatabaseManager.java:615)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.flush(AbstractDatabaseManager.java:186)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.shutdown(AbstractDatabaseManager.java:226)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.releaseSub(AbstractDatabaseManager.java:215)
+	at org.apache.logging.log4j.core.appender.AbstractManager.stop(AbstractManager.java:117)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseAppender.stop(AbstractDatabaseAppender.java:181)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.stop(AbstractConfiguration.java:414)
+	at org.apache.logging.log4j.core.LoggerContext.stop(LoggerContext.java:377)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.shutdown(ClassLoaderContextSelector.java:75)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.shutdown(Log4jContextFactory.java:328)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:392)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:373)
+	at org.sourceid.saml20.domain.mgmt.impl.MediatorImpl$ShutdownHook.run(MediatorImpl.java:1113)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 28 more
+2024-01-18 10:40:22,648 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:119)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.access$800(JdbcDatabaseManager.java:64)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.reconnect(JdbcDatabaseManager.java:181)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.run(JdbcDatabaseManager.java:192)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 15 more
+2024-01-18 10:41:49,661 ====================== PF Environment Variables =========================
+
+2024-01-18 10:41:49,647 PF_HOME = /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate 
+
+2024-01-18 10:41:49,662 =========================================================================
+2024-01-18 10:41:49,722 pf.operational.mode: STANDALONE
+2024-01-18 10:41:49,723 Set 70 system properties from /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate/bin/run.properties
+2024-01-18 10:46:50,631 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:125)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndStart(JdbcDatabaseManager.java:613)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.flush(AbstractDatabaseManager.java:186)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.shutdown(AbstractDatabaseManager.java:226)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.releaseSub(AbstractDatabaseManager.java:215)
+	at org.apache.logging.log4j.core.appender.AbstractManager.stop(AbstractManager.java:117)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseAppender.stop(AbstractDatabaseAppender.java:181)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.stop(AbstractConfiguration.java:414)
+	at org.apache.logging.log4j.core.LoggerContext.stop(LoggerContext.java:377)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.shutdown(ClassLoaderContextSelector.java:75)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.shutdown(Log4jContextFactory.java:328)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:392)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:373)
+	at org.sourceid.saml20.domain.mgmt.impl.MediatorImpl$ShutdownHook.run(MediatorImpl.java:1113)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 25 more
+2024-01-18 10:46:50,635 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:119)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.access$800(JdbcDatabaseManager.java:64)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.reconnect(JdbcDatabaseManager.java:181)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.reconnectOn(JdbcDatabaseManager.java:708)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndStart(JdbcDatabaseManager.java:615)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.flush(AbstractDatabaseManager.java:186)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.shutdown(AbstractDatabaseManager.java:226)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.releaseSub(AbstractDatabaseManager.java:215)
+	at org.apache.logging.log4j.core.appender.AbstractManager.stop(AbstractManager.java:117)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseAppender.stop(AbstractDatabaseAppender.java:181)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.stop(AbstractConfiguration.java:414)
+	at org.apache.logging.log4j.core.LoggerContext.stop(LoggerContext.java:377)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.shutdown(ClassLoaderContextSelector.java:75)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.shutdown(Log4jContextFactory.java:328)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:392)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:373)
+	at org.sourceid.saml20.domain.mgmt.impl.MediatorImpl$ShutdownHook.run(MediatorImpl.java:1113)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 28 more
+2024-01-18 10:46:55,639 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:119)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.access$800(JdbcDatabaseManager.java:64)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.reconnect(JdbcDatabaseManager.java:181)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.run(JdbcDatabaseManager.java:192)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 15 more
+2024-01-18 10:47:02,347 ====================== PF Environment Variables =========================
+
+2024-01-18 10:47:02,336 PF_HOME = /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate 
+
+2024-01-18 10:47:02,347 =========================================================================
+2024-01-18 10:47:02,378 pf.operational.mode: STANDALONE
+2024-01-18 10:47:02,379 Set 70 system properties from /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate/bin/run.properties
+2024-01-18 10:51:30,942 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:125)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndStart(JdbcDatabaseManager.java:613)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.flush(AbstractDatabaseManager.java:186)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.shutdown(AbstractDatabaseManager.java:226)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.releaseSub(AbstractDatabaseManager.java:215)
+	at org.apache.logging.log4j.core.appender.AbstractManager.stop(AbstractManager.java:117)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseAppender.stop(AbstractDatabaseAppender.java:181)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.stop(AbstractConfiguration.java:414)
+	at org.apache.logging.log4j.core.LoggerContext.stop(LoggerContext.java:377)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.shutdown(ClassLoaderContextSelector.java:75)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.shutdown(Log4jContextFactory.java:328)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:392)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:373)
+	at org.sourceid.saml20.domain.mgmt.impl.MediatorImpl$ShutdownHook.run(MediatorImpl.java:1113)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 25 more
+2024-01-18 10:51:30,945 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:119)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.access$800(JdbcDatabaseManager.java:64)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.reconnect(JdbcDatabaseManager.java:181)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.reconnectOn(JdbcDatabaseManager.java:708)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndStart(JdbcDatabaseManager.java:615)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.flush(AbstractDatabaseManager.java:186)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.shutdown(AbstractDatabaseManager.java:226)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.releaseSub(AbstractDatabaseManager.java:215)
+	at org.apache.logging.log4j.core.appender.AbstractManager.stop(AbstractManager.java:117)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseAppender.stop(AbstractDatabaseAppender.java:181)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.stop(AbstractConfiguration.java:414)
+	at org.apache.logging.log4j.core.LoggerContext.stop(LoggerContext.java:377)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.shutdown(ClassLoaderContextSelector.java:75)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.shutdown(Log4jContextFactory.java:328)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:392)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:373)
+	at org.sourceid.saml20.domain.mgmt.impl.MediatorImpl$ShutdownHook.run(MediatorImpl.java:1113)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 28 more
+2024-01-18 10:51:35,954 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:119)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.access$800(JdbcDatabaseManager.java:64)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.reconnect(JdbcDatabaseManager.java:181)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.run(JdbcDatabaseManager.java:192)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 15 more
+2024-01-18 10:56:09,749 ====================== PF Environment Variables =========================
+
+2024-01-18 10:56:09,740 PF_HOME = /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate 
+
+2024-01-18 10:56:09,750 =========================================================================
+2024-01-18 10:56:09,779 pf.operational.mode: STANDALONE
+2024-01-18 10:56:09,779 Set 70 system properties from /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate/bin/run.properties
+2024-01-25 17:01:00,797 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:125)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndStart(JdbcDatabaseManager.java:613)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.flush(AbstractDatabaseManager.java:186)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.shutdown(AbstractDatabaseManager.java:226)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.releaseSub(AbstractDatabaseManager.java:215)
+	at org.apache.logging.log4j.core.appender.AbstractManager.stop(AbstractManager.java:117)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseAppender.stop(AbstractDatabaseAppender.java:181)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.stop(AbstractConfiguration.java:414)
+	at org.apache.logging.log4j.core.LoggerContext.stop(LoggerContext.java:377)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.shutdown(ClassLoaderContextSelector.java:75)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.shutdown(Log4jContextFactory.java:328)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:392)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:373)
+	at org.sourceid.saml20.domain.mgmt.impl.MediatorImpl$ShutdownHook.run(MediatorImpl.java:1113)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 25 more
+2024-01-25 17:01:00,839 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:119)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.access$800(JdbcDatabaseManager.java:64)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.reconnect(JdbcDatabaseManager.java:181)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.reconnectOn(JdbcDatabaseManager.java:708)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndStart(JdbcDatabaseManager.java:615)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.flush(AbstractDatabaseManager.java:186)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.shutdown(AbstractDatabaseManager.java:226)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager.releaseSub(AbstractDatabaseManager.java:215)
+	at org.apache.logging.log4j.core.appender.AbstractManager.stop(AbstractManager.java:117)
+	at org.apache.logging.log4j.core.appender.db.AbstractDatabaseAppender.stop(AbstractDatabaseAppender.java:181)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.stop(AbstractConfiguration.java:414)
+	at org.apache.logging.log4j.core.LoggerContext.stop(LoggerContext.java:377)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.shutdown(ClassLoaderContextSelector.java:75)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.shutdown(Log4jContextFactory.java:328)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:392)
+	at org.apache.logging.log4j.LogManager.shutdown(LogManager.java:373)
+	at org.sourceid.saml20.domain.mgmt.impl.MediatorImpl$ShutdownHook.run(MediatorImpl.java:1113)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 28 more
+2024-01-25 17:01:05,846 ERROR Failed to connect to logging database
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'jdbc:oracle:thin:@//{host}:1521/{name}'
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75)
+	at org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459)
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getDatabaseConnection(LoggingDBConnectionPoolFactory.java:119)
+	at com.pingidentity.log4j.LoggingDBConnectionPoolFactory.getOracleDatabaseConnection(LoggingDBConnectionPoolFactory.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1.getConnection(FactoryMethodConnectionSource.java:105)
+	at org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource.getConnection(FactoryMethodConnectionSource.java:53)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.connectAndPrepare(JdbcDatabaseManager.java:592)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager.access$800(JdbcDatabaseManager.java:64)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.reconnect(JdbcDatabaseManager.java:181)
+	at org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Reconnector.run(JdbcDatabaseManager.java:192)
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:298)
+	at org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:60)
+	... 15 more

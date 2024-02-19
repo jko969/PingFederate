@@ -1,0 +1,7 @@
+2023-12-11 13:37:46,189 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin | [0:0:0:0:0:0:0:1] | eLBlIm8pZyNVWuzbRhUl8NB6Y6_JycOqFn6npYoEWcM | USER | LOGIN_ATTEMPT |  | Login was successful
+2023-12-11 13:40:02,950 | pingFederateAdmin |  | [0:0:0:0:0:0:0:1] |  | USER | LOGIN_ATTEMPT |  | Unable to contact the LDAP service. If you continue to see this error, please check your LDAP server connectivity.
+2023-12-11 13:43:38,282 | pingFederateAdmin |  | [0:0:0:0:0:0:0:1] |  | USER | LOGIN_ATTEMPT |  | Unable to contact the LDAP service. If you continue to see this error, please check your LDAP server connectivity.
+2023-12-11 13:45:08,919 | pingFederateAdmin |  | [0:0:0:0:0:0:0:1] |  | USER | LOGIN_ATTEMPT |  | Unable to contact the LDAP service. If you continue to see this error, please check your LDAP server connectivity.
+2023-12-11 13:47:47,634 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin | [0:0:0:0:0:0:0:1] | 5kEkUPqYc9OOk4OSvccErrsRGzRkPGSzV1NSTUfWtdU | USER | LOGIN_ATTEMPT |  | Login was successful
+2023-12-11 21:36:12,844 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin | 10.0.0.3 | BJCoyLQCLatli1JIoEXFErezzifnNsYPH8NX22bRlcQ | USER | LOGIN_ATTEMPT |  | Login was successful
+2023-12-11 22:01:18,059 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin |  | 5kEkUPqYc9OOk4OSvccErrsRGzRkPGSzV1NSTUfWtdU | USER | SESSION_TIMEOUT |  | Session timed out at 2023-12-11 21:48:12,071

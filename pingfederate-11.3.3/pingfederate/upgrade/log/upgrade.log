@@ -1,0 +1,120 @@
+INFO Source version (11.1.8) is being treated as equivalent to known reference version 11.1.3.
+INFO ************************************************************************************************************************
+INFO *  Date:   2023-12-11 13:26:54.329
+INFO *  Mode:   Standard
+INFO *
+INFO *  Source
+INFO *    Version:                           11.1.8 (Reference Version: 11.1.3)
+INFO *    <sourcePingfederateRootDir>:       /Users/jko/Desktop/PingFederate/pingfederate-11.1.8/pingfederate
+INFO *    Operational Mode:                  STANDALONE
+INFO *
+INFO *  Destination
+INFO *    Version:                           11.3.3
+INFO *    <destinationPingfederateRootDir>:  /Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate
+INFO ************************************************************************************************************************
+WARN We've detected that your logging configuration file (log4j2.xml) has been modified but changes could not be migrated. Manual updates required. Please see "PingFederate Upgrade Utility User Guide" for more details.
+ERROR Unable to rename <destinationPingfederateRootDir>/server/default/conf/log4j2.xml to <destinationPingfederateRootDir>/server/default/conf/log4j2-default-11.3.3.xml
+org.apache.commons.io.FileExistsException: File element in parameter 'null' already exists: '/Users/jko/Desktop/PingFederate/pingfederate-11.3.3/pingfederate/server/default/conf/log4j2-default-11.3.3.xml'
+	at org.apache.commons.io.FileUtils.requireAbsent(FileUtils.java:2587) ~[commons-io.jar:2.11.0]
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2305) ~[commons-io.jar:2.11.0]
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2283) ~[commons-io.jar:2.11.0]
+	at com.pingidentity.pingfederate.migration.file.custom.Log4j2ConfigFileCustomAction.performMigration(Log4j2ConfigFileCustomAction.java:41) [pf-upgrade-jar.jar:?]
+	at com.pingidentity.pingfederate.migration.file.FileMigrator.customMigrate(FileMigrator.java:21) [pf-upgrade-jar.jar:?]
+	at com.pingidentity.pingfederate.migration.file.FileMigrationManager.migrate(FileMigrationManager.java:67) [pf-upgrade-jar.jar:?]
+	at com.pingidentity.pingfederate.migration.file.FileMigrationManager.migrate(FileMigrationManager.java:31) [pf-upgrade-jar.jar:?]
+	at com.pingidentity.pingfederate.migration.PingFederateMigrator.migrateConfDirectory(PingFederateMigrator.java:547) [pf-upgrade-jar.jar:?]
+	at com.pingidentity.pingfederate.migration.PingFederateMigrator.execute(PingFederateMigrator.java:128) [pf-upgrade-jar.jar:?]
+	at com.pingidentity.pingfederate.migration.UpgradeUtility.main(UpgradeUtility.java:131) [pf-upgrade-jar.jar:?]
+INFO Copy <sourcePingfederateRootDir>/server/default/conf/log4j2.xml to <destinationPingfederateRootDir>/server/default/conf/log4j2.xml
+INFO Copy <sourcePingfederateRootDir>/server/default/conf/template/otp.adapter.otp.verified.template.html to <destinationPingfederateRootDir>/server/default/conf/template/otp.adapter.otp.verified.template.html
+INFO Copy <sourcePingfederateRootDir>/server/default/conf/template/.DS_Store to <destinationPingfederateRootDir>/server/default/conf/template/.DS_Store
+INFO Copy <sourcePingfederateRootDir>/server/default/conf/template/otp.adapter.otp.required.template.html to <destinationPingfederateRootDir>/server/default/conf/template/otp.adapter.otp.required.template.html
+INFO Copy <sourcePingfederateRootDir>/server/default/conf/template/twilio.sms.otp.adapter.template.html to <destinationPingfederateRootDir>/server/default/conf/template/twilio.sms.otp.adapter.template.html
+INFO Copy <sourcePingfederateRootDir>/server/default/conf/template/twilio.voice.otp.adapter.template.html to <destinationPingfederateRootDir>/server/default/conf/template/twilio.voice.otp.adapter.template.html
+INFO Copy <sourcePingfederateRootDir>/server/default/conf/template/otp.adapter.mfa.failed.template.html to <destinationPingfederateRootDir>/server/default/conf/template/otp.adapter.mfa.failed.template.html
+INFO Copy <sourcePingfederateRootDir>/server/default/conf/template/otp.adapter.device.selection.template.html to <destinationPingfederateRootDir>/server/default/conf/template/otp.adapter.device.selection.template.html
+INFO Copy <sourcePingfederateRootDir>/server/default/conf/template/mail-notifications/pingfederate.smtp.otp.adapter.template.html to <destinationPingfederateRootDir>/server/default/conf/template/mail-notifications/pingfederate.smtp.otp.adapter.template.html
+WARN Start generating service-points.conf from <sourcePingfederateRootDir>/server/default/conf/META-INF/hivemodule.xml...
+WARN service-points.conf generation is completed. Please use service-points.conf to specify the implementation classes for of core PingFederate services. 
+INFO New Default in <destinationPingfederateRootDir>/server/default/conf/language-packs/pingfederate-messages.properties. The default value for global.footerMessage was changed from '© Copyright 2022 Ping Identity. All rights reserved.' to '© Copyright 2023 Ping Identity. All rights reserved.'.
+INFO New Default in <destinationPingfederateRootDir>/server/default/conf/language-packs/pingfederate-messages.properties. The default value for account-unlock.info was changed from 'Your account has been unlocked. Please use your existing password to sign on, or reset your password if needed.' to 'Your account has been unlocked. Please continue to sign on, or reset your password if needed.'.
+INFO New Default in <destinationPingfederateRootDir>/server/default/conf/language-packs/pingfederate-messages.properties. The default value for forgot-password-success.passwordChangeSuccessful was changed from 'Your password has been reset. Please use your new password to sign on again.' to 'Your password has been reset. Please click continue to sign on.'.
+INFO New Default in <destinationPingfederateRootDir>/server/default/conf/language-packs/pingfederate-email-messages.properties. The default value for global.footerMessage was changed from '&copy; Copyright 2022 Ping Identity. All rights reserved.' to '&copy; Copyright 2023 Ping Identity. All rights reserved.'.
+WARN Property not migrated: <sourcePingfederateRootDir>/server/default/conf/language-packs/pingone-mfa-messages.properties. Property 'platform.pingone.mfa.preauthentication.input.required.icon' no longer needed.
+WARN Property not migrated: <sourcePingfederateRootDir>/server/default/conf/language-packs/pingone-mfa-messages.properties. Property 'pingone.mfa.preauthentication.input.required.message' no longer needed.
+WARN Property not migrated: <sourcePingfederateRootDir>/server/default/conf/language-packs/pingone-mfa-messages.properties. Property 'pingone.mfa.preauthentication.input.required.header' no longer needed.
+WARN Property not migrated: <sourcePingfederateRootDir>/server/default/conf/language-packs/pingone-mfa-messages.properties. Property 'pingone.mfa.preauthentication.input.required.cancel.button.title' no longer needed.
+WARN Property not migrated: <sourcePingfederateRootDir>/server/default/conf/language-packs/pingone-mfa-messages.properties. Property 'platform.pingone.mfa.preauthentication.input.required.method' no longer needed.
+WARN Property not migrated: <sourcePingfederateRootDir>/server/default/conf/language-packs/pingone-mfa-messages.properties. Property 'pingone.mfa.preauthentication.input.required.use.password.title' no longer needed.
+WARN Property not migrated: <sourcePingfederateRootDir>/server/default/conf/language-packs/pingone-mfa-messages.properties. Property 'security_key.pingone.mfa.preauthentication.input.required.method' no longer needed.
+WARN Property not migrated: <sourcePingfederateRootDir>/server/default/conf/language-packs/pingone-mfa-messages.properties. Property 'security_key.pingone.mfa.preauthentication.input.required.icon' no longer needed.
+WARN Property not migrated: <sourcePingfederateRootDir>/server/default/conf/language-packs/pingone-mfa-messages.properties. Property 'pingone.mfa.preauthentication.input.required.title' no longer needed.
+INFO New Default in <destinationPingfederateRootDir>/server/default/conf/language-packs/pingone-verify-messages.properties. The default value for pingone.verify.required.description was changed from 'Download the <b>{0}</b> app for iOS or Android, then scan this QR code, or enter the verification code to verify yourself.' to 'Click on the web link sent to your mobile device or scan the QR code using your mobile device's camera. Compare the verification code to the one shown on your device.'.
+INFO New Default in <destinationPingfederateRootDir>/server/default/conf/language-packs/pingone-verify-messages.properties. The default value for pingone.verify.required.error.description was changed from 'To retry verification, scan the QR code or enter the verification code.' to 'We had a problem on our side. Scan the QR code using your mobile device's camera and compare the verification code to the one shown on your device. Select Cancel to send a web link via text or email.'.
+INFO Copy <sourcePingfederateRootDir>/server/default/conf/pingfederate.lic to <destinationPingfederateRootDir>/server/default/conf/pingfederate.lic
+INFO License copied to destination PingFederate:
+License Edition: Free
+License ID: 00594229
+Issue Date: 10/12/23
+Product: PingFederate
+Version: 11.3
+Issued To: unspecified
+Org: Versent Pty Ltd
+Node Limit: unlimited
+Connection Limit: unlimited
+Expiration Date: 9/1/24
+WS-Trust STS: true
+OAuth: true
+Outbound Provisioning: true
+DeploymentMethod: Traditional
+INFO Update <destinationPingfederateRootDir>/server/default/conf/cluster-config-replication.conf. Change property publish.replication.data.on.startup from false to false.
+INFO Delete <destinationPingfederateRootDir>/server/default/deploy/PingIDRadiusPCV-3.0.3.jar
+INFO Copy <sourcePingfederateRootDir>/server/default/deploy/PingIDRadiusPCV-3.0.3.jar to <destinationPingfederateRootDir>/server/default/deploy/PingIDRadiusPCV-3.0.3.jar
+INFO Delete <destinationPingfederateRootDir>/server/default/deploy/pf-pingid-idp-adapter-2.13.2.jar
+INFO Copy <sourcePingfederateRootDir>/server/default/deploy/pf-pingid-idp-adapter-2.13.2.jar to <destinationPingfederateRootDir>/server/default/deploy/pf-pingid-idp-adapter-2.13.2.jar
+INFO Copy <sourcePingfederateRootDir>/server/default/data/sourceid-soap-auth.xml to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/ping-trust.jks to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/authn-session-policies.xml to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/pingfederate-system-keys.xml to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/pingfederate-dn-to-idp-mappings.xml to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/sp-white-list.xml to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/oauth-client-settings.xml to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/pingfederate-jdbc-ds.xml to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/password-credential-validators to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/authn-api-config.xml to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/ping-dsig.jks to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/pingfederate-pk-cert-rotation.xml to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/dynamic-client-registration to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/module to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/sourceid-saml2-local-metadata.xml to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/bearer-access-token-management-plugins to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/pf.jwk to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/oauth-authz-server-settings.xml to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/pingfederate-sts-request-contracts.xml to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/pingfederate-metadata-url.xml to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/adapter-config to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/idp-white-list.xml to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/local to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/connections to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/openid-connect-provider-policy.xml to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/connection-mapping-contracts to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/oauth-clients to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/instance to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/localidentity to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/jwks-endpoint.xml to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/krb5.conf to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/ping-ssl-server.jks to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/pingfederate-authn-selection-config.xml to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/pingfederate-dependency-errors.xml to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/pingfederate-admin-user.xml to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/sourceid-saml2-metadata.xml to <destinationPingfederateRootDir>/server/default/data
+INFO Copy <sourcePingfederateRootDir>/server/default/data/oauth-authz-server-settings.xml to <destinationPingfederateRootDir>/server/default/data/oauth-authz-server-settings.xml
+INFO Copy <sourcePingfederateRootDir>/server/default/data/pingfederate-ldap-ds.xml to <destinationPingfederateRootDir>/server/default/data/pingfederate-ldap-ds.xml
+INFO Update <destinationPingfederateRootDir>/server/default/data/config-store/org.sourceid.oauth20.domain.AuthzServerManagerImpl.xml. Change property RevokeReplayedRefreshToken from false to default for upgrade: false.
+INFO New Default in <destinationPingfederateRootDir>/server/default/data/config-store/com.pingidentity.crypto.SignatureAlgorithms.xml. The default value for signature-algorithms was changed from {DSA_SHA1=http://www.w3.org/2000/09/xmldsig#dsa-sha1, RSA_SHA1=http://www.w3.org/2000/09/xmldsig#rsa-sha1, RSA_SHA256=http://www.w3.org/2001/04/xmldsig-more#rsa-sha256, RSA_SHA384=http://www.w3.org/2001/04/xmldsig-more#rsa-sha384, RSA_SHA512=http://www.w3.org/2001/04/xmldsig-more#rsa-sha512, ECDSA_SHA256=http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256, ECDSA_SHA384=http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384, ECDSA_SHA512=http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512} to {DSA_SHA1=http://www.w3.org/2000/09/xmldsig#dsa-sha1, RSA_SHA1=http://www.w3.org/2000/09/xmldsig#rsa-sha1, RSA_SHA256=http://www.w3.org/2001/04/xmldsig-more#rsa-sha256, RSA_SHA384=http://www.w3.org/2001/04/xmldsig-more#rsa-sha384, RSA_SHA512=http://www.w3.org/2001/04/xmldsig-more#rsa-sha512, RSASSA-PSS_SHA256=http://www.w3.org/2007/05/xmldsig-more#sha256-rsa-MGF1, RSASSA-PSS_SHA384=http://www.w3.org/2007/05/xmldsig-more#sha384-rsa-MGF1, RSASSA-PSS_SHA512=http://www.w3.org/2007/05/xmldsig-more#sha512-rsa-MGF1, ECDSA_SHA256=http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256, ECDSA_SHA384=http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384, ECDSA_SHA512=http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512}.
+INFO New Default in <destinationPingfederateRootDir>/server/default/data/config-store/com.pingidentity.crypto.SignatureAlgorithms.xml. The default value for signature-algorithms-runtime was changed from {SHA1withDSA=http://www.w3.org/2000/09/xmldsig#dsa-sha1, SHA1withRSA=http://www.w3.org/2000/09/xmldsig#rsa-sha1, SHA256withRSA=http://www.w3.org/2001/04/xmldsig-more#rsa-sha256, SHA384withRSA=http://www.w3.org/2001/04/xmldsig-more#rsa-sha384, SHA512withRSA=http://www.w3.org/2001/04/xmldsig-more#rsa-sha512, SHA256withECDSA=http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256, SHA384withECDSA=http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384, SHA512withECDSA=http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512} to {SHA1withDSA=http://www.w3.org/2000/09/xmldsig#dsa-sha1, SHA1withRSA=http://www.w3.org/2000/09/xmldsig#rsa-sha1, SHA256withRSA=http://www.w3.org/2001/04/xmldsig-more#rsa-sha256, SHA384withRSA=http://www.w3.org/2001/04/xmldsig-more#rsa-sha384, SHA512withRSA=http://www.w3.org/2001/04/xmldsig-more#rsa-sha512, SHA256withRSAandMGF1=http://www.w3.org/2007/05/xmldsig-more#sha256-rsa-MGF1, SHA384withRSAandMGF1=http://www.w3.org/2007/05/xmldsig-more#sha384-rsa-MGF1, SHA512withRSAandMGF1=http://www.w3.org/2007/05/xmldsig-more#sha512-rsa-MGF1, SHA256withECDSA=http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256, SHA384withECDSA=http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384, SHA512withECDSA=http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512}.
+INFO New Default in <destinationPingfederateRootDir>/server/default/data/config-store/com.pingidentity.crypto.SignatureAlgorithms.xml. The default value for digest-algorithms was changed from {DSA_SHA1=http://www.w3.org/2000/09/xmldsig#sha1, RSA_SHA1=http://www.w3.org/2000/09/xmldsig#sha1, RSA_SHA256=http://www.w3.org/2001/04/xmlenc#sha256, RSA_SHA384=http://www.w3.org/2001/04/xmldsig-more#sha384, RSA_SHA512=http://www.w3.org/2001/04/xmlenc#sha512, ECDSA_SHA256=http://www.w3.org/2001/04/xmlenc#sha256, ECDSA_SHA384=http://www.w3.org/2001/04/xmldsig-more#sha384, ECDSA_SHA512=http://www.w3.org/2001/04/xmlenc#sha512} to {DSA_SHA1=http://www.w3.org/2000/09/xmldsig#sha1, RSA_SHA1=http://www.w3.org/2000/09/xmldsig#sha1, RSA_SHA256=http://www.w3.org/2001/04/xmlenc#sha256, RSA_SHA384=http://www.w3.org/2001/04/xmldsig-more#sha384, RSA_SHA512=http://www.w3.org/2001/04/xmlenc#sha512, RSASSA-PSS_SHA256=http://www.w3.org/2001/04/xmlenc#sha256, RSASSA-PSS_SHA384=http://www.w3.org/2001/04/xmldsig-more#sha384, RSASSA-PSS_SHA512=http://www.w3.org/2001/04/xmlenc#sha512, ECDSA_SHA256=http://www.w3.org/2001/04/xmlenc#sha256, ECDSA_SHA384=http://www.w3.org/2001/04/xmldsig-more#sha384, ECDSA_SHA512=http://www.w3.org/2001/04/xmlenc#sha512}.
+INFO New Default in <destinationPingfederateRootDir>/server/default/data/config-store/response-header-runtime-config.xml. The default value for X-Frame-Options was changed from {value=SAMEORIGIN, exclude-patterns=
+            */idp/startSLO.ping;*/sp/startSLO.ping;*/idp/SLO.saml2;*/sp/SLO.saml2;*/idp/SLO.ping;*/sp/SLO.ping
+        } to {value=SAMEORIGIN, exclude-patterns=*/idp/startSLO.ping;*/sp/startSLO.ping;*/idp/SLO.saml2;*/sp/SLO.saml2;*/idp/SLO.ping;*/sp/SLO.ping}.
+INFO Upgrade completed with 1 error(s) and 12 warning(s)

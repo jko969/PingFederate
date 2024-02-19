@@ -1,0 +1,4 @@
+2024-01-24 12:23:08,171 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin |  | NP1GT8ysYGhCsT3wZicdwRVtANJ__bB1dJC2Z8yjmqw | USER | SESSION_TIMEOUT |  | Session timed out at 2024-01-24 00:49:47,343
+2024-01-24 12:23:11,000 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin | [0:0:0:0:0:0:0:1] | Hsg6da8S4G5oJODC1sITixDXcqCVYCr6TmvaydPyv4o | USER | LOGIN_ATTEMPT |  | Login was successful
+2024-01-24 12:23:22,325 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin | [0:0:0:0:0:0:0:1] |  | DATA_STORE | MODIFY |  | LDAP-FC54C87F0BC5FA63833FC8CFB5CBB8921150CDD6
+2024-01-24 12:23:33,063 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin | [0:0:0:0:0:0:0:1] |  | DATA_STORE | MODIFY |  | LDAP-FC54C87F0BC5FA63833FC8CFB5CBB8921150CDD6

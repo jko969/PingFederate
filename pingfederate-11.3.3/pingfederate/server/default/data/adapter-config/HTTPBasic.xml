@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:AdapterConfiguration authnCtxClassRef="" isInheritAttributeSettings="false" isInheritAttributeMapping="false" maskOgnlValues="false" uniqueUserKeyField="username" isInheritExtendedContractAttributes="false" name="HTTP_Basic" xmlns:urn="urn:sourceid.org:saml2:adapter:conf">
+    <urn:Fields>
+        <urn:Field name="Realm">test</urn:Field>
+        <urn:Field name="Challenge Retries">3</urn:Field>
+    </urn:Fields>
+    <urn:AdvancedFields/>
+    <urn:Tables>
+        <urn:Table name="Credential Validators">
+            <urn:Row defaultRow="false">
+                <urn:Field name="Password Credential Validator Instance">PasswordValidator</urn:Field>
+            </urn:Row>
+        </urn:Table>
+    </urn:Tables>
+    <urn:ExtendedContractAttributes/>
+    <urn:ExtendedAttributesAdditionalProperties/>
+    <urn:UniqueKeyField>username</urn:UniqueKeyField>
+    <urn:AttributeMapping>
+        <urn1:AttributeMap Name="username" Type="LDAP" AttributeSourceId="pingdirectory" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:ValueText>uid</urn1:ValueText>
+        </urn1:AttributeMap>
+        <urn1:AttributeSource Id="pingdirectory" Description="pingdirectory" Type="LDAP" DataSourceId="LDAP-FC54C87F0BC5FA63833FC8CFB5CBB8921150CDD6" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:Parameter Name="filter" Value="uid=${username}"/>
+            <urn1:Parameter Name="search_base" Value="ou=People,dc=people,dc=com"/>
+            <urn1:Parameter Name="search_attributes" Value="Subject DN,uid"/>
+            <urn1:Parameter Name="search_scope" Value="SUBTREE_SCOPE"/>
+            <urn1:Parameter Name="memberof_nested_group" Value="false"/>
+        </urn1:AttributeSource>
+        <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+    </urn:AttributeMapping>
+</urn:AdapterConfiguration>

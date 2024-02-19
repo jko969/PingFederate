@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:AuthnSelectionConfig lastModifiedMillis="1695344231488" enableAuthnSelection="true" enableSpAuthnSelection="false" failIfNoSelection="false" xmlns:urn="urn:pingidentity.com:pf:authn-selection">
+    <urn:AuthnSelectionTrees>
+        <urn:AuthnSelectionTree treeId="1" treeName="defaultPolicy" disabled="false" authnApiApp="" handleFailuresLocally="false">
+            <urn:AstRoot context="">
+                <urn:AstAction xsi:type="urn:AuthnSourceActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <urn:AuthnSourceKey type="ADAPTER">HTMLFormAdapter</urn:AuthnSourceKey>
+                    <urn:fallbackToSuccess>true</urn:fallbackToSuccess>
+                    <urn:userIdAuthenticated>false</urn:userIdAuthenticated>
+                </urn:AstAction>
+                <urn:AstChild context="Fail">
+                    <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </urn:AstChild>
+                <urn:AstChild context="Success">
+                    <urn:AstAction apcId="BTxhm4tn8wRIewte" xsi:type="urn:ApcMappingActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <urn:AttributeMapping>
+                            <urn1:AttributeMap Name="mail" Type="Adapter" AttributeSourceId="HTMLFormAdapter" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>mail</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:AttributeMap Name="subject" Type="Adapter" AttributeSourceId="HTMLFormAdapter" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>username</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:AttributeMap Name="givenName" Type="Adapter" AttributeSourceId="HTMLFormAdapter" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>givenName</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:AttributeMap Name="sn" Type="Adapter" AttributeSourceId="HTMLFormAdapter" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>sn</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                        </urn:AttributeMapping>
+                    </urn:AstAction>
+                </urn:AstChild>
+            </urn:AstRoot>
+        </urn:AuthnSelectionTree>
+        <urn:AuthnSelectionTree treeId="123" treeName="localProfilePolicy" disabled="false" authnApiApp="" handleFailuresLocally="false">
+            <urn:AstRoot context="">
+                <urn:AstAction xsi:type="urn:AuthnSourceActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <urn:AuthnSourceKey type="ADAPTER">HTMLFormAdapter</urn:AuthnSourceKey>
+                    <urn:fallbackToSuccess>true</urn:fallbackToSuccess>
+                    <urn:userIdAuthenticated>false</urn:userIdAuthenticated>
+                </urn:AstAction>
+                <urn:AstChild context="Fail">
+                    <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </urn:AstChild>
+                <urn:AstChild context="Success">
+                    <urn:AstAction lipId="RetCpIyEtuzp3rTP" xsi:type="urn:LocalIdentityMappingActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <urn:InboundAttributeMapping>
+                            <urn1:AttributeMap Name="LIPuid" Type="Adapter" AttributeSourceId="HTMLFormAdapter" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>username</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:AttributeMap Name="LIPLastName" Type="Adapter" AttributeSourceId="HTMLFormAdapter" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>sn</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:AttributeMap Name="pf.local.identity.unique.id" Type="Adapter" AttributeSourceId="HTMLFormAdapter" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>username</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:AttributeMap Name="LIPEmail" Type="Adapter" AttributeSourceId="HTMLFormAdapter" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>mail</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:AttributeMap Name="LIPGivenName" Type="Adapter" AttributeSourceId="HTMLFormAdapter" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>givenName</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                        </urn:InboundAttributeMapping>
+                        <urn:OutboundAttributeMapping>
+                            <urn1:AttributeMap Name="mail" Type="Local Account" AttributeSourceId="RetCpIyEtuzp3rTP" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>LIPEmail</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:AttributeMap Name="subject" Type="Local Account" AttributeSourceId="RetCpIyEtuzp3rTP" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>LIPuid</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:AttributeMap Name="givenName" Type="Local Account" AttributeSourceId="RetCpIyEtuzp3rTP" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>LIPGivenName</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:AttributeMap Name="sn" Type="Local Account" AttributeSourceId="RetCpIyEtuzp3rTP" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>LIPLastName</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                        </urn:OutboundAttributeMapping>
+                    </urn:AstAction>
+                </urn:AstChild>
+            </urn:AstRoot>
+        </urn:AuthnSelectionTree>
+    </urn:AuthnSelectionTrees>
+    <urn:DefaultAuthnSources/>
+</urn:AuthnSelectionConfig>

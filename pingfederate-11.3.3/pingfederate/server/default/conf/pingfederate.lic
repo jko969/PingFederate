@@ -1,0 +1,14 @@
+ID=00594229
+WSTrustSTS=true
+OAuth=true
+SaasProvisioning=true
+Product=PingFederate
+Version=11.3
+EnforcementType=3
+Tier=Free
+IssueDate=2023-12-10
+ExpirationDate=2024-01-09
+DeploymentMethod=Traditional
+Organization=Versent Pty Ltd
+SignCode=FF0F
+Signature=302C02146B34C738F787D500AAB244DC739CE29BA3268452021407905D25AC7069B2EEB9B794D6D43B1D2C43CCDE

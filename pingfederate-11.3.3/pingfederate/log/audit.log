@@ -1,0 +1,23 @@
+2023-12-19 10:28:28,195| tid:JaDGTwExglbFYCwr-S-Xjjpefw0| AUTHN_ATTEMPT| | 10.0.0.3 | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 94 
+2023-12-19 10:28:31,525| tid:JaDGTwExglbFYCwr-S-Xjjpefw0| AUTHN_ATTEMPT| | 10.0.0.3 | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 9 
+2023-12-19 10:28:56,374| tid:JaDGTwExglbFYCwr-S-Xjjpefw0| AUTHN_ATTEMPT| | 10.0.0.3 | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 8 
+2023-12-19 10:29:03,921| tid:2lrUsrbl7EFpIcasc042C_g1A0Y| AUTHN_ATTEMPT| | 10.0.0.3 | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 7 
+2023-12-19 10:29:13,646| tid:2lrUsrbl7EFpIcasc042C_g1A0Y| AUTHN_ATTEMPT| | 10.0.0.3 | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 10 
+2023-12-19 10:29:15,553| tid:2lrUsrbl7EFpIcasc042C_g1A0Y| AUTHN_ATTEMPT| | 10.0.0.3 | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 7 
+2023-12-19 10:29:21,978| tid:2lrUsrbl7EFpIcasc042C_g1A0Y| AUTHN_ATTEMPT| | 10.0.0.3 | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 7 
+2023-12-19 10:29:25,349| tid:2lrUsrbl7EFpIcasc042C_g1A0Y| AUTHN_ATTEMPT| | 10.0.0.3 | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 7 
+2023-12-19 10:29:52,217| tid:E5-hGe-_kE_Fg8Ol45m2vmu8KVw| AUTHN_ATTEMPT| | 10.0.0.3 | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 9 
+2023-12-19 10:30:37,988| tid:wFvXKQ-Gkt20-mIXUFxc-8L9EUU| AUTHN_ATTEMPT| | [0:0:0:0:0:0:0:1] | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 7 
+2023-12-19 10:30:39,424| tid:wFvXKQ-Gkt20-mIXUFxc-8L9EUU| AUTHN_ATTEMPT| | [0:0:0:0:0:0:0:1] | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 4 
+2023-12-19 10:31:30,903| tid:wFvXKQ-Gkt20-mIXUFxc-8L9EUU| AUTHN_ATTEMPT| | [0:0:0:0:0:0:0:1] | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 14 
+2023-12-19 10:31:32,909| tid:wFvXKQ-Gkt20-mIXUFxc-8L9EUU| AUTHN_ATTEMPT| sdf| [0:0:0:0:0:0:0:1] | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| [source:LDAP-FC54C87F0BC5FA63833FC8CFB5CBB8921150CDD6] User Not Found| 13 
+2023-12-19 10:32:36,624| tid:vwwxNegp8XUK7tqquDN935r1-Qw| AUTHN_ATTEMPT| | [0:0:0:0:0:0:0:1] | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 9 
+2023-12-19 10:32:53,734| tid:vwwxNegp8XUK7tqquDN935r1-Qw| AUTHN_ATTEMPT| | [0:0:0:0:0:0:0:1] | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 11 
+2023-12-19 10:33:03,064| tid:vwwxNegp8XUK7tqquDN935r1-Qw| AUTHN_ATTEMPT| | [0:0:0:0:0:0:0:1] | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 11 
+2023-12-19 10:33:09,191| tid:vwwxNegp8XUK7tqquDN935r1-Qw| AUTHN_ATTEMPT| | [0:0:0:0:0:0:0:1] | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 11 
+2023-12-19 10:33:18,908| tid:vwwxNegp8XUK7tqquDN935r1-Qw| AUTHN_ATTEMPT| | [0:0:0:0:0:0:0:1] | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 10 
+2023-12-19 10:33:20,999| tid:vwwxNegp8XUK7tqquDN935r1-Qw| AUTHN_ATTEMPT| r| [0:0:0:0:0:0:0:1] | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| [source:LDAP-FC54C87F0BC5FA63833FC8CFB5CBB8921150CDD6] User Not Found| 7 
+2023-12-19 10:58:31,916| tid:5RmJ0VAYHF_5kfh_STJlPDIzK_Q| AUTHN_ATTEMPT| | [0:0:0:0:0:0:0:1] | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 11 
+2023-12-19 10:58:45,533| tid:5RmJ0VAYHF_5kfh_STJlPDIzK_Q| AUTHN_ATTEMPT| | [0:0:0:0:0:0:0:1] | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 12 
+2023-12-19 10:58:46,930| tid:5RmJ0VAYHF_5kfh_STJlPDIzK_Q| AUTHN_ATTEMPT| frr| [0:0:0:0:0:0:0:1] | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| [source:LDAP-FC54C87F0BC5FA63833FC8CFB5CBB8921150CDD6] User Not Found| 5 
+2023-12-19 13:58:04,769| tid:pWwyEuckkD_SMkJD-0Ni6r7XelE| AUTHN_ATTEMPT| | [0:0:0:0:0:0:0:1] | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 11 

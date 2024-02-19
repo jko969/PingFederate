@@ -1,0 +1,5 @@
+2023-12-18 11:35:49,735 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin | [0:0:0:0:0:0:0:1] | jY7rV9Ya49M4LQb3sbFPp2_BtJOzeancteJzy6ZWFeU | USER | LOGIN_ATTEMPT |  | Login was successful
+2023-12-18 11:39:27,867 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin | [0:0:0:0:0:0:0:1] |  | IDP_ADAPTER | MODIFY |  | HTML_Form_Adapter
+2023-12-18 11:40:10,098 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin | [0:0:0:0:0:0:0:1] |  | IDP_ADAPTER | MODIFY |  | HTML_Form_Adapter
+2023-12-18 11:53:49,935 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin | [0:0:0:0:0:0:0:1] | 1CsqnVkHH8WkfGZ4hjKoPhtPPgNIwJkhg0IS7fZGRj8 | USER | LOGIN_ATTEMPT |  | Login was successful
+2023-12-18 12:08:21,143 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin | [0:0:0:0:0:0:0:1] | 5ttNzx84cv6LnBcSh0iBo3guFYPIVpe0e2DTHbzgjAI | USER | LOGIN_ATTEMPT |  | Login was successful

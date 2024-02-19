@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:AdapterConfiguration authnCtxClassRef="" isInheritAttributeSettings="false" isInheritAttributeMapping="false" maskOgnlValues="false" uniqueUserKeyField="username" isInheritExtendedContractAttributes="false" name="CompositeAdapter" xmlns:urn="urn:sourceid.org:saml2:adapter:conf">
+    <urn:Fields>
+        <urn:Field name="Attribute Insertion">Add To Back</urn:Field>
+    </urn:Fields>
+    <urn:AdvancedFields/>
+    <urn:Tables>
+        <urn:Table name="Adapters">
+            <urn:Row defaultRow="false">
+                <urn:Field name="Adapter Instance">HTTPBasic</urn:Field>
+                <urn:Field name="Policy">Required</urn:Field>
+                <urn:Field name="AuthN Context Weight">3</urn:Field>
+                <urn:Field name="AuthN Context Override"/>
+            </urn:Row>
+            <urn:Row defaultRow="false">
+                <urn:Field name="Adapter Instance">HTMLFormAdapter</urn:Field>
+                <urn:Field name="Policy">Required</urn:Field>
+                <urn:Field name="AuthN Context Weight">3</urn:Field>
+                <urn:Field name="AuthN Context Override"/>
+            </urn:Row>
+        </urn:Table>
+        <urn:Table name="Input User Id Mapping">
+            <urn:Row defaultRow="false">
+                <urn:Field name="Target Adapter">HTML_Form_Adapter</urn:Field>
+                <urn:Field name="User Id Selection">username</urn:Field>
+            </urn:Row>
+        </urn:Table>
+        <urn:Table name="Attribute Name Synonyms"/>
+    </urn:Tables>
+    <urn:ExtendedContractAttributes>
+        <urn:AttributeName>mail</urn:AttributeName>
+        <urn:AttributeName>username</urn:AttributeName>
+    </urn:ExtendedContractAttributes>
+    <urn:ExtendedAttributesAdditionalProperties/>
+    <urn:UniqueKeyField>username</urn:UniqueKeyField>
+    <urn:AttributeMapping>
+        <urn1:AttributeMap Name="mail" Type="Adapter" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:ValueText>mail</urn1:ValueText>
+        </urn1:AttributeMap>
+        <urn1:AttributeMap Name="username" Type="Adapter" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:ValueText>username</urn1:ValueText>
+        </urn1:AttributeMap>
+        <urn1:AttributeSource Id="pingdirectory" Description="pingdirectory" Type="LDAP" DataSourceId="LDAP-FC54C87F0BC5FA63833FC8CFB5CBB8921150CDD6" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:Parameter Name="filter" Value="uid=${username}"/>
+            <urn1:Parameter Name="search_base" Value="ou=People,dc=people,dc=com"/>
+            <urn1:Parameter Name="search_attributes" Value="Subject DN,mail,uid"/>
+            <urn1:Parameter Name="search_scope" Value="SUBTREE_SCOPE"/>
+            <urn1:Parameter Name="memberof_nested_group" Value="false"/>
+        </urn1:AttributeSource>
+        <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+    </urn:AttributeMapping>
+</urn:AdapterConfiguration>

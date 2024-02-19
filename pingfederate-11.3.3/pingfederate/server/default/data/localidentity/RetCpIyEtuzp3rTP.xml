@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<loc:localIdentity profileId="RetCpIyEtuzp3rTP" profileName="test" contractId="BTxhm4tn8wRIewte" profileEnabled="false" registrationEnabled="true" xmlns:loc="http://pingidentity.com/2017/07/localIdentity">
+    <loc:auth-sources/>
+    <loc:fields stripSpaceFromUniqueField="true" maskOgnlValues="false">
+        <loc:field type="TEXT" default-value="" id="LIPEmail" label="Email Address">
+            <loc:appliesTo profile="false" registration="true"/>
+            <loc:parameter param-name="Read-Only" value="false"/>
+            <loc:parameter param-name="Required" value="true"/>
+            <loc:parameter param-name="Unique ID Field" value="false"/>
+            <loc:parameter param-name="Mask Log Values" value="false"/>
+        </loc:field>
+        <loc:field type="TEXT" default-value="" id="LIPGivenName" label="First Name">
+            <loc:appliesTo profile="false" registration="true"/>
+            <loc:parameter param-name="Read-Only" value="false"/>
+            <loc:parameter param-name="Required" value="true"/>
+            <loc:parameter param-name="Unique ID Field" value="false"/>
+            <loc:parameter param-name="Mask Log Values" value="false"/>
+        </loc:field>
+        <loc:field type="TEXT" default-value="" id="LIPLastName" label="Last Name">
+            <loc:appliesTo profile="false" registration="true"/>
+            <loc:parameter param-name="Read-Only" value="false"/>
+            <loc:parameter param-name="Required" value="true"/>
+            <loc:parameter param-name="Unique ID Field" value="false"/>
+            <loc:parameter param-name="Mask Log Values" value="false"/>
+        </loc:field>
+        <loc:field type="TEXT" default-value="" id="LIPuid" label="UID">
+            <loc:appliesTo profile="false" registration="true"/>
+            <loc:parameter param-name="Read-Only" value="false"/>
+            <loc:parameter param-name="Required" value="true"/>
+            <loc:parameter param-name="Unique ID Field" value="true"/>
+            <loc:parameter param-name="Mask Log Values" value="false"/>
+        </loc:field>
+    </loc:fields>
+    <loc:email-verification-config emailVerificationEnabled="false" verifyEmailTemplateName="message-template-email-ownership-verification.html" emailVerificationSentTemplateName="local.identity.email.verification.sent.html" emailVerificationSuccessTemplateName="local.identity.email.verification.success.html" emailVerificationErrorTemplateName="local.identity.email.verification.error.html" emailVerificationOtpTemplateName="local.identity.email.verification.otp.html" allowedOtpCharacterSet="" otlTimeToLive="1440" verificationEmailField="" verificationStatusField="" notificationPublisherId="" requireVerifiedEmail="false" requireVerifiedEmailTemplateName="local.identity.email.verification.required.html"/>
+    <loc:registration-config captchaEnabled="false" templateName="local.identity.registration.html" thisIsMyDevice="false" createAuthnSessionAfterRegistration="false"/>
+    <loc:datastore-mapping>
+        <loc:DataSource Description="" Type="LDAP" DataSourceId="LDAP-FC54C87F0BC5FA63833FC8CFB5CBB8921150CDD6">
+            <urn:Parameter Name="create_pattern" Value="uid=${LIPuid}" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2"/>
+            <urn:Parameter Name="search_base" Value="ou=People,dc=people,dc=com" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2"/>
+            <urn:Parameter Name="search_scope" Value="ONELEVEL_SCOPE" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2"/>
+            <urn:Parameter Name="object_class" Value="inetOrgPerson" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        </loc:DataSource>
+        <loc:Attribute fieldName="LIPEmail" datastore-field="mail"/>
+        <loc:Attribute fieldName="LIPGivenName" datastore-field="givenName"/>
+        <loc:Attribute fieldName="LIPuid" datastore-field="uid"/>
+        <loc:Attribute fieldName="LIPLastName" datastore-field="sn"/>
+    </loc:datastore-mapping>
+</loc:localIdentity>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:OpenIdConnectProviderPolicy enabled="true" defaultPolicyGroupId="OIDC_Test" trackUserSessionsForLogout="false" xmlns:urn="urn:pingidentity.com:pf:openid:connect:idp:policy">
+    <urn:ProviderPolicyGroup policyId="OIDC_Test" idTokenLife="5" includeSriInIdToken="true" includeUserInfoInIdToken="true" includeSHashInIdToken="true" returnIdTokenOnRefreshGrant="true" reissueIdTokenHybridFlows="false" policyName="OIDC_Test" accessTokenManagerId="OIDCTestATM">
+        <urn:UserInfoMapping>
+            <urn1:AttributeMap Name="sub" Type="Token" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                <urn1:ValueText>username</urn1:ValueText>
+            </urn1:AttributeMap>
+            <urn1:AttributeMap Name="last_name" Type="LDAP" AttributeSourceId="pingdirectory" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                <urn1:ValueText>sn</urn1:ValueText>
+            </urn1:AttributeMap>
+            <urn1:AttributeMap Name="given_name" Type="LDAP" AttributeSourceId="pingdirectory" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                <urn1:ValueText>givenName</urn1:ValueText>
+            </urn1:AttributeMap>
+            <urn1:AttributeMap Name="email" Type="LDAP" AttributeSourceId="pingdirectory" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                <urn1:ValueText>mail</urn1:ValueText>
+            </urn1:AttributeMap>
+            <urn1:AttributeSource Id="pingdirectory" Description="pingdirectory" Type="LDAP" DataSourceId="LDAP-FC54C87F0BC5FA63833FC8CFB5CBB8921150CDD6" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                <urn1:Parameter Name="filter" Value="sub=${username}"/>
+                <urn1:Parameter Name="search_base" Value="ou=People,dc=people,dc=com"/>
+                <urn1:Parameter Name="search_attributes" Value="Subject DN,givenName,mail,sn"/>
+                <urn1:Parameter Name="search_scope" Value="SUBTREE_SCOPE"/>
+                <urn1:Parameter Name="memberof_nested_group" Value="false"/>
+            </urn1:AttributeSource>
+            <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        </urn:UserInfoMapping>
+        <urn:scopeAttributesMap/>
+        <urn:attributeContractInclusionMap/>
+        <urn:ExtendedAttributesAdditionalProperties/>
+    </urn:ProviderPolicyGroup>
+</urn:OpenIdConnectProviderPolicy>

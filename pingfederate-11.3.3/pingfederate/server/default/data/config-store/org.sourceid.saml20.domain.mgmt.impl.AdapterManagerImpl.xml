@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:config xmlns:con="http://www.sourceid.org/2004/05/config">
+    <con:map name="IdpAuthnAdapterInstances">
+        <con:item name="HTMLFormAdapter">com.pingidentity.adapters.htmlform.idp.HtmlFormIdpAuthnAdapter</con:item>
+        <con:item name="HTMLFormAdapter2">com.pingidentity.adapters.htmlform.idp.HtmlFormIdpAuthnAdapter</con:item>
+        <con:item name="HTTPBasic">com.pingidentity.adapters.httpbasic.idp.HttpBasicIdpAuthnAdapter</con:item>
+        <con:item name="CompositeAdapter">com.pingidentity.pf.adapters.composite.CompositeAdapter</con:item>
+        <con:item name="IDFirst">com.pingidentity.adapters.identifierfirst.idp.IdentifierFirstAdapter</con:item>
+        <con:item name="refIDPadapter">com.pingidentity.pf.adapters.referenceid.IdpBackchannelReferenceAuthnAdapter</con:item>
+    </con:map>
+</con:config>

@@ -1,0 +1,2 @@
+2024-01-03 12:17:38,804 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin |  | iXj5QaZTLb17LpSA7moANci6iqhbYkIi0B30EG5d_Us | USER | SESSION_TIMEOUT |  | Session timed out at 2023-12-28 20:42:47,294
+2024-01-03 12:17:42,942 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin | [0:0:0:0:0:0:0:1] | KNtJ4xHvcBHqprlowIThXEpQmOxTLbiDoOc8Eyn_F5w | USER | LOGIN_ATTEMPT |  | Login was successful

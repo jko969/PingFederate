@@ -1,0 +1,7 @@
+2023-12-13 09:02:17,405 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin | [0:0:0:0:0:0:0:1] | SwLa1rDZsrv0iCQ9k1Ml1l3U7HG4JoB4tQE35xtx2r4 | USER | LOGIN_ATTEMPT |  | Login was successful
+2023-12-13 09:02:36,498 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin | [0:0:0:0:0:0:0:1] |  | DATA_STORE | TEST_CONNECTION |  | Test connection to LDAP server: 10.0.0.13:1636
+2023-12-13 09:02:52,754 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin | [0:0:0:0:0:0:0:1] |  | DATA_STORE | TEST_CONNECTION |  | Test connection to LDAP server: 10.0.0.13:1636
+2023-12-13 09:02:55,727 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin | [0:0:0:0:0:0:0:1] |  | DATA_STORE | TEST_CONNECTION |  | Test connection to LDAP server: localhost:1636
+2023-12-13 09:02:59,927 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin | [0:0:0:0:0:0:0:1] |  | DATA_STORE | MODIFY |  | LDAP-FC54C87F0BC5FA63833FC8CFB5CBB8921150CDD6
+2023-12-13 09:03:14,040 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin | [0:0:0:0:0:0:0:1] |  | OAUTH_CLIENTS | MODIFY |  | dc-4xxm55sova3l0bxplmod6drqt
+2023-12-13 17:26:43,574 | pingFederateAdmin | UserAdmin,Admin,CryptoAdmin,ExpressionAdmin | [0:0:0:0:0:0:0:1] | hbhED1GxlHBO1hCm9_2ZSfd3RFCgqbxuM-v74-vnV4Q | USER | LOGIN_ATTEMPT |  | Login was successful

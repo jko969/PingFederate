@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:config xmlns:con="http://www.sourceid.org/2004/05/config">
+    <con:item name="00444503:VIOLATION">2023-09-14</con:item>
+    <con:item name="00540798:WARN">2023-10-17</con:item>
+    <con:item name="00540798:GRACE">2023-10-18</con:item>
+    <con:item name="00540798:VIOLATION">2023-12-12</con:item>
+    <con:item name="00594229:WARN">2024-01-08</con:item>
+    <con:item name="00594229:VIOLATION">2024-02-01</con:item>
+</con:config>

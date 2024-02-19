@@ -1,0 +1,12 @@
+2023-12-12 13:47:36,843| | | |  | | | | | AS| | | Access Grant Management Exception| 0 
+2023-12-12 13:58:24,197| tid:S3u1VaC8gcOMtybQbHD3qSy65uQ| AUTHN_ATTEMPT| | 10.0.0.3 | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 31 
+2023-12-12 13:58:25,866| tid:S3u1VaC8gcOMtybQbHD3qSy65uQ| AUTHN_ATTEMPT| | 10.0.0.3 | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 8 
+2023-12-12 13:58:31,924| tid:PxPu3eqRc9F5SohY4RVuDLy12n0| AUTHN_ATTEMPT| | [0:0:0:0:0:0:0:1] | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 13 
+2023-12-12 13:58:33,264| tid:PxPu3eqRc9F5SohY4RVuDLy12n0| AUTHN_ATTEMPT| | [0:0:0:0:0:0:0:1] | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 7 
+2023-12-12 13:58:35,745| tid:PxPu3eqRc9F5SohY4RVuDLy12n0| AUTHN_ATTEMPT| | [0:0:0:0:0:0:0:1] | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 10 
+2023-12-12 13:58:37,212| tid:PxPu3eqRc9F5SohY4RVuDLy12n0| AUTHN_ATTEMPT| | [0:0:0:0:0:0:0:1] | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 22 
+2023-12-12 14:12:51,239| tid:-nKGvpJNPx8PhUIMdyxEOZJ8-HM| AUTHN_ATTEMPT| | [0:0:0:0:0:0:0:1] | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 10 
+2023-12-12 14:12:53,688| tid:-nKGvpJNPx8PhUIMdyxEOZJ8-HM| AUTHN_ATTEMPT| | [0:0:0:0:0:0:0:1] | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 9 
+2023-12-12 14:12:53,725| tid:-nKGvpJNPx8PhUIMdyxEOZJ8-HM| SSO| | [0:0:0:0:0:0:0:1] | | https://samltest.id/saml/sp| SAML20| localhost| IdP| failure| HTMLFormAdapter| | 46 
+2023-12-12 14:12:56,651| tid:-nKGvpJNPx8PhUIMdyxEOZJ8-HM| AUTHN_ATTEMPT| | [0:0:0:0:0:0:0:1] | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 9 
+2023-12-12 14:15:26,218| tid:AMYbM1JcCUsOfwc5V8N_dJdmZCk| AUTHN_ATTEMPT| | [0:0:0:0:0:0:0:1] | | https://samltest.id/saml/sp| SAML20| localhost| IdP| inprogress| HTMLFormAdapter| | 11 
